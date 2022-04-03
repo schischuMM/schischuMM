@@ -14,7 +14,7 @@ body:
     attributes:
       label: Contact Details
       description: Who has reported the bug?
-      placeholder: ex. email@example.com
+      placeholder: ex. email@example.com or Harry Potter
     validations:
       required: false
   - type: textarea
