@@ -1,8 +1,10 @@
 name: Bug Report
-description: Issue Template for a Bug Report
+description: A Default Bug Report
 title: "[Bug]: "
 labels: ["Bug"]
 assignees:
+  - schischuMM
+reviewers:
   - schischuMM
 body:
   - type: markdown
