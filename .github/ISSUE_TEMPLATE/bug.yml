@@ -39,7 +39,18 @@ body:
   - type: dropdown
     id: browsers
     attributes:
-      label: What browsers are you seeing the problem on?
+      label: With which browsers does the problem occur?
+      multiple: true
+      options:
+        - Unknown
+        - Firefox
+        - Chrome
+        - Safari
+        - Microsoft Edge
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: With which browsers does the problem occur?
       multiple: true
       options:
         - Unknown
