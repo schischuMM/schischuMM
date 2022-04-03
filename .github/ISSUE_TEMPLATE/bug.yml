@@ -1,6 +1,86 @@
 name: Bug Report
-description: A Default Bug Report
+description: "A Default Bug Report"
 title: "[Bug]: "
 labels: ["Bug"]
 assignees:
   - schischuMM
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: "Who reported the bug?"
+      placeholder: ex. email@example.com or Harry Potter
+    validations:
+      required: false
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: "What is the problem? What is not working? What needs to be fixed? Whats happen?"
+      placeholder: Tell us what you see!
+      value: "A bug happened!"
+    validations:
+      required: true
+  - type: dropdown
+    id: version
+    attributes:
+      label: Version
+      description: "What version of our software are you running?"
+      options:
+        - (Default)
+        - 1.0.3 (Edge)
+    validations:
+      required: true
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: Browser
+      description: "With which browser does the problem appear?"   
+      multiple: true
+      options:
+        - Unknown
+        - Firefox
+        - Chrome
+        - Safari
+        - Microsoft Edge
+   - type: dropdown
+    id: hardware
+    attributes:
+      label: Hardware 
+      description: "With which hardware does the problem occur?"
+      multiple: true
+      options:
+        - Unknown
+        - iPad
+        - Smartphone
+        - Desktop
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating System
+      description: "With which operating system does the error occur?"
+      multiple: true
+      options:
+        - Unknown
+        - iOS
+        - Microsoft
+        - Android
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      render: shell
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
