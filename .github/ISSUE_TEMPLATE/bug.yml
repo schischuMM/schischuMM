@@ -57,6 +57,16 @@ body:
         - Desktop
         - Tablet
         - Smartphone
+  - type: dropdown
+    id: os
+    attributes:
+      label: Which operating systems?
+      multiple: true
+      options:
+        - Unknown
+        - iOS
+        - Microsoft
+        - Android
   - type: textarea
     id: logs
     attributes:
