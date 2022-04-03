@@ -1,5 +1,5 @@
-name: "Bug Report"
-description: "A Default Bug Report"
+name: Bug Report
+description: A Default Bug Report
 title: "[Bug]: "
 labels: ["Bug"]
 assignees:
@@ -13,7 +13,7 @@ body:
     id: contact
     attributes:
       label: Contact Details
-      description: Who reported the bug?
+      description: "Who reported the bug?"
       placeholder: ex. email@example.com or Harry Potter
     validations:
       required: false
@@ -21,7 +21,7 @@ body:
     id: what-happened
     attributes:
       label: What happened?
-      description: What is the problem? What is not working? What needs to be fixed? Whats happen?
+      description: "What is the problem? What is not working? What needs to be fixed? Whats happen?"
       placeholder: Tell us what you see!
       value: "A bug happened!"
     validations:
@@ -30,7 +30,7 @@ body:
     id: version
     attributes:
       label: Version
-      description: What version of our software are you running?
+      description: "What version of our software are you running?"
       options:
         - (Default)
         - 1.0.3 (Edge)
@@ -39,7 +39,8 @@ body:
   - type: dropdown
     id: browsers
     attributes:
-      label: With which browser does the problem appear?
+      label: Browser
+      description: "With which browser does the problem appear?"   
       multiple: true
       options:
         - Unknown
@@ -50,7 +51,8 @@ body:
    - type: dropdown
     id: hardware
     attributes:
-      label: With which hardware does the problem occur?
+      label: Hardware 
+      description: "With which hardware does the problem occur?"
       multiple: true
       options:
         - Unknown
@@ -60,7 +62,8 @@ body:
   - type: dropdown
     id: os
     attributes:
-      label: With which operating system?
+      label: Operating System
+      description: "With which operating system does the error occur?"
       multiple: true
       options:
         - Unknown
