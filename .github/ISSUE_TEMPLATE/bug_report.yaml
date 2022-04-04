@@ -1,0 +1,58 @@
+name: Bug Report
+description: normal Bug
+title: "[BUG]: "
+labels: ["Bug"]
+assignees:
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: Who has reported the bug?
+      placeholder: ex. email@example.com or Harry Potter
+    validations:
+      required: false
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What does not work? What is the problem? What exactly needs to be fixed?
+      placeholder: Tell us what you see!
+      value: "A bug happened!"
+    validations:
+      required: true  
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: Which browsers are you seeing the problem on?
+      multiple: true
+      options:
+        - Unknown
+        - Firefox
+        - Chrome
+        - Safari
+        - Microsoft Edge
+  - type: dropdown
+    id: hardware
+    attributes:
+      label: With what devices?
+      multiple: true
+      options:
+        - Unknown
+        - Desktop
+        - Tablet
+        - Smartphone
+  - type: dropdown
+    id: os
+    attributes:
+      label: Which operating systems?
+      multiple: true
+      options:
+        - Unknown
+        - iOS
+        - Microsoft
+        - Android
